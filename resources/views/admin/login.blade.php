@@ -29,11 +29,11 @@
                                         @endif
 
                                         <div class="mb-5">
-                                            <h4 class="text-center">Login Here</h4>
+                                            <h4 class="text-center">Login As Admin</h4>
                                         </div>
                                     </div>
                                 </div>
-                                <form action="{{ route("authenticate") }}" method="POST">
+                                <form action="{{ route("admin.authenticate") }}" method="POST">
                                     @csrf
                                     <div class="row gy-3 overflow-hidden">
                                         <div class="col-12">
@@ -65,10 +65,7 @@
                                     <div class="col-12">
                                         <hr class="mt-5 mb-4 border-secondary-subtle">
                                         <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-center">
-                                            <a href="{{ route("register") }}" class="link-secondary text-decoration-none">Create User account</a>
-                                        </div>
-                                        <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-center">
-                                            <a href="{{ route("admin.login") }}" class="link-secondary text-decoration-none">Login As Admin</a>
+                                            <a href="{{ route("login") }}" class="link-secondary text-decoration-none">Login As User</a>
                                         </div>
                                     </div>
                                 </div>
